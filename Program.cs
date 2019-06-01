@@ -25,7 +25,8 @@ namespace Array_Examples
             Point2[] c = new Point2[1000];
             for (int i = 0; i < c.Length; i++)  // Iterates 0 to 999.
                 c[i] = new Point2();            // Sets array element i to a new Point2.
-            // Important to remember: An array itself is always a reference type object, regardless of the element type. 
+            // ImportantNote0: An array itself is always a reference type object, regardless of the element type.
+            // ImportantNote1: All array indexing is bounds-checked by the runtime. An IndexOutofRangeException is thrown if you use an invalide index.
         }
     }
     // Whether an array element type is a value type or a reference type has important performance implications. 
